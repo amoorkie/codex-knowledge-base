@@ -1,0 +1,414 @@
+version: 2
+updated: 2026-03-09
+metadata_fields:
+  priority:
+    values: [high, medium, low]
+  scope:
+    values: [core, advanced, operations, security, workflow, ecosystem]
+  stability:
+    values: [high, medium, low]
+  trust:
+    values: [official, spec, reference, community, mixed]
+sections:
+  - name: frontend
+    files:
+      - path: frontend/react.md
+        topics: [react, frontend, ui, state-management]
+        priority: high
+        scope: core
+        stability: medium
+        trust: official
+      - path: frontend/react-native.md
+        topics: [react-native, mobile, frontend, expo]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: frontend/flutter.md
+        topics: [flutter, dart, mobile, cross-platform]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: frontend/nextjs.md
+        topics: [nextjs, react, frontend, fullstack]
+        priority: high
+        scope: core
+        stability: medium
+        trust: official
+      - path: frontend/nuxt.md
+        topics: [nuxt, vue, frontend, fullstack]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: frontend/solid.md
+        topics: [solid, frontend, reactivity, performance]
+        priority: low
+        scope: ecosystem
+        stability: medium
+        trust: official
+      - path: frontend/vue.md
+        topics: [vue, frontend, ui, reactivity]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: frontend/svelte.md
+        topics: [svelte, sveltekit, frontend, compiler]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: frontend/typescript.md
+        topics: [typescript, frontend, backend, typing]
+        priority: high
+        scope: core
+        stability: high
+        trust: official
+  - name: backend
+    files:
+      - path: backend/nodejs.md
+        topics: [nodejs, backend, api, runtime]
+        priority: high
+        scope: core
+        stability: medium
+        trust: official
+      - path: backend/python.md
+        topics: [python, backend, api, tooling]
+        priority: high
+        scope: core
+        stability: high
+        trust: official
+      - path: backend/fastapi.md
+        topics: [fastapi, python, backend, api]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: backend/django.md
+        topics: [django, python, backend, web]
+        priority: medium
+        scope: core
+        stability: high
+        trust: official
+      - path: backend/nestjs.md
+        topics: [nestjs, nodejs, backend, architecture]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: backend/go.md
+        topics: [go, golang, backend, services]
+        priority: medium
+        scope: core
+        stability: high
+        trust: mixed
+      - path: backend/grpc.md
+        topics: [grpc, rpc, protocols, backend]
+        priority: medium
+        scope: advanced
+        stability: high
+        trust: official
+      - path: backend/aspnet-core.md
+        topics: [aspnet-core, dotnet, backend, web-api]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: backend/graphql.md
+        topics: [graphql, api, schema, backend]
+        priority: medium
+        scope: advanced
+        stability: high
+        trust: spec
+      - path: backend/rust.md
+        topics: [rust, backend, systems, performance]
+        priority: medium
+        scope: core
+        stability: high
+        trust: mixed
+      - path: backend/kafka.md
+        topics: [kafka, streaming, messaging, backend]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+      - path: backend/rabbitmq.md
+        topics: [rabbitmq, messaging, queues, backend]
+        priority: medium
+        scope: advanced
+        stability: high
+        trust: official
+      - path: backend/spring.md
+        topics: [spring, java, backend, enterprise]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: backend/cloudflare-workers.md
+        topics: [cloudflare, workers, edge, serverless]
+        priority: medium
+        scope: operations
+        stability: medium
+        trust: official
+  - name: community
+    files:
+      - path: community/vibecode-wiki.md
+        topics: [ai-assisted-development, vibe-coding, playbooks, workflows]
+        priority: medium
+        scope: workflow
+        stability: low
+        trust: community
+  - name: data
+    files:
+      - path: data/airflow.md
+        topics: [airflow, orchestration, workflows, scheduling]
+        priority: medium
+        scope: operations
+        stability: medium
+        trust: official
+      - path: data/dbt.md
+        topics: [dbt, analytics-engineering, transformations, data-modeling]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: data/spark.md
+        topics: [spark, data-processing, pyspark, distributed-compute]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+      - path: data/mlflow.md
+        topics: [mlflow, mlops, model-registry, tracking]
+        priority: low
+        scope: ecosystem
+        stability: medium
+        trust: official
+      - path: data/snowflake.md
+        topics: [snowflake, warehouse, analytics, sql]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: data/bigquery.md
+        topics: [bigquery, analytics, warehousing, sql]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: data/duckdb.md
+        topics: [duckdb, analytics, olap, local-analytics]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: data/flink.md
+        topics: [flink, streaming, stateful-processing, data]
+        priority: low
+        scope: advanced
+        stability: medium
+        trust: official
+      - path: data/temporal.md
+        topics: [temporal, workflows, reliability, orchestration]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+  - name: databases
+    files:
+      - path: databases/postgresql.md
+        topics: [postgresql, sql, database, performance]
+        priority: high
+        scope: core
+        stability: high
+        trust: official
+      - path: databases/postgresql-advanced.md
+        topics: [postgresql, performance, tuning, internals]
+        priority: high
+        scope: advanced
+        stability: high
+        trust: official
+      - path: databases/mysql.md
+        topics: [mysql, sql, database, replication]
+        priority: medium
+        scope: core
+        stability: high
+        trust: official
+      - path: databases/redis.md
+        topics: [redis, cache, queue, key-value]
+        priority: high
+        scope: core
+        stability: medium
+        trust: official
+      - path: databases/redis-advanced.md
+        topics: [redis, memory, clustering, performance]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+      - path: databases/mongodb.md
+        topics: [mongodb, nosql, document-db, aggregation]
+        priority: medium
+        scope: core
+        stability: medium
+        trust: official
+      - path: databases/elasticsearch.md
+        topics: [elasticsearch, search, analytics, indexing]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+      - path: databases/clickhouse.md
+        topics: [clickhouse, analytics, olap, columnar]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+  - name: devops
+    files:
+      - path: devops/docker-kubernetes.md
+        topics: [docker, kubernetes, containers, deployment]
+        priority: high
+        scope: core
+        stability: medium
+        trust: official
+      - path: devops/github-actions.md
+        topics: [github-actions, ci, cd, automation]
+        priority: high
+        scope: operations
+        stability: medium
+        trust: official
+      - path: devops/terraform.md
+        topics: [terraform, iac, infrastructure, provisioning]
+        priority: high
+        scope: operations
+        stability: medium
+        trust: official
+      - path: devops/nginx.md
+        topics: [nginx, reverse-proxy, load-balancing, web-server]
+        priority: medium
+        scope: operations
+        stability: high
+        trust: official
+      - path: devops/aws.md
+        topics: [aws, cloud, architecture, security]
+        priority: high
+        scope: operations
+        stability: medium
+        trust: official
+      - path: devops/prometheus-grafana.md
+        topics: [prometheus, grafana, observability, monitoring]
+        priority: high
+        scope: operations
+        stability: medium
+        trust: official
+      - path: devops/argocd.md
+        topics: [argocd, gitops, kubernetes, deployment]
+        priority: medium
+        scope: operations
+        stability: medium
+        trust: official
+      - path: devops/kubernetes-networking.md
+        topics: [kubernetes, networking, services, cni]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+      - path: devops/opentelemetry.md
+        topics: [opentelemetry, observability, tracing, metrics]
+        priority: high
+        scope: operations
+        stability: medium
+        trust: official
+      - path: devops/cilium.md
+        topics: [cilium, kubernetes, ebpf, networking]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+      - path: devops/envoy.md
+        topics: [envoy, proxy, mesh, traffic-management]
+        priority: medium
+        scope: advanced
+        stability: medium
+        trust: official
+  - name: testing
+    files:
+      - path: testing/playwright.md
+        topics: [playwright, testing, e2e, browser]
+        priority: high
+        scope: workflow
+        stability: medium
+        trust: official
+      - path: testing/vitest.md
+        topics: [vitest, testing, unit-tests, vite]
+        priority: medium
+        scope: workflow
+        stability: medium
+        trust: official
+  - name: security
+    files:
+      - path: security/web-security.md
+        topics: [security, owasp, asvs, secure-coding]
+        priority: high
+        scope: security
+        stability: high
+        trust: official
+      - path: security/oauth-oidc.md
+        topics: [oauth, oidc, auth, identity]
+        priority: high
+        scope: security
+        stability: high
+        trust: spec
+      - path: security/kubernetes-security.md
+        topics: [kubernetes, security, rbac, pod-security]
+        priority: high
+        scope: security
+        stability: medium
+        trust: official
+      - path: security/linux-hardening.md
+        topics: [linux, hardening, os-security, baseline]
+        priority: medium
+        scope: security
+        stability: medium
+        trust: mixed
+      - path: security/secrets-management.md
+        topics: [secrets, vault, security, rotation]
+        priority: high
+        scope: security
+        stability: medium
+        trust: mixed
+      - path: security/service-mesh.md
+        topics: [service-mesh, istio, mtls, authorization]
+        priority: medium
+        scope: security
+        stability: medium
+        trust: official
+  - name: ai
+    files:
+      - path: ai/openai.md
+        topics: [openai, llm, agents, evals]
+        priority: high
+        scope: core
+        stability: medium
+        trust: official
+      - path: ai/openai-codex.md
+        topics: [openai, codex, coding-agents, workflows]
+        priority: high
+        scope: workflow
+        stability: medium
+        trust: official
+      - path: ai/claude-code.md
+        topics: [claude, anthropic, coding-agents, workflows]
+        priority: high
+        scope: workflow
+        stability: medium
+        trust: official
+      - path: ai/coding-agents-best-practices.md
+        topics: [coding-agents, best-practices, orchestration, evaluation]
+        priority: high
+        scope: workflow
+        stability: medium
+        trust: mixed
